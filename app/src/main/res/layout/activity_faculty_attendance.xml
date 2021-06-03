@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background"
+    tools:context=".FacultyAttendance">
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/fac_full_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="70dp"
+        android:paddingLeft="55dp"
+        android:text="Name"
+        android:textSize="20sp"
+        android:fontFamily="@font/roboto_black"
+        android:textColor="@color/purple_200"
+        android:paddingStart="55dp"
+        tools:ignore="RtlSymmetry" />
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/fac_email_dash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email"
+        android:textSize="17sp"
+        android:paddingLeft="55dp"
+        android:fontFamily="@font/roboto_bold"
+        android:textColor="@color/brand_gray"
+        android:paddingTop="10dp"
+        android:paddingStart="55dp"
+        tools:ignore="RtlSymmetry" />
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/fac_topicDis"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_width="332dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="41dp"
+        android:layout_marginBottom="12dp"
+        app:boxStrokeColor="@color/purple_200"
+        app:boxBackgroundMode="outline"
+        app:boxStrokeWidth="2dp"
+        android:textColorHint="@color/purple_200"
+        android:layout_marginStart="41dp">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/topicDis_input_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:hint="Topic Discussed"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mark the Attendance"
+        android:textSize="17sp"
+        android:paddingLeft="55dp"
+        android:fontFamily="@font/roboto_bold"
+        android:textColor="@color/brand_gray"
+        android:paddingTop="10dp"
+        android:paddingStart="55dp"
+        tools:ignore="RtlSymmetry" />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/stu_list_recycler"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="50dp"
+        android:scrollbars="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="330dp"/>
+
+    <Button
+        android:id="@+id/fac_list_submit"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="130dp"
+        android:layout_width="150dp"
+        android:layout_height="55dp"
+        android:backgroundTint="@color/purple_200"
+        android:text="SUBMIT"
+        android:layout_marginStart="130dp"
+        tools:targetApi="lollipop" />
+</LinearLayout>

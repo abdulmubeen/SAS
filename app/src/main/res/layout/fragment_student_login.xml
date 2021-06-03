@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/background"
+    tools:context=".StudentLogin">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/student_email"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_width="332dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="41dp"
+        android:layout_marginBottom="12dp"
+        app:boxStrokeColor="@color/purple_200"
+        app:boxBackgroundMode="outline"
+        app:boxStrokeWidth="2dp"
+        android:textColorHint="@color/purple_200"
+        android:layout_marginStart="41dp">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/s_email_input_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:hint="@string/enter_username"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/student_password"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_width="332dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="160dp"
+        android:layout_marginLeft="41dp"
+        app:endIconMode="password_toggle"
+        app:endIconTint="@color/purple_200"
+        android:textColorHint="@color/purple_200"
+        app:boxStrokeColor="@color/purple_200"
+        app:boxBackgroundMode="outline"
+        app:boxStrokeWidth="2dp"
+        android:layout_marginStart="41dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/s_password_input_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:hint="@string/enter_password" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/s_login"
+        android:layout_marginTop="260dp"
+        android:layout_marginLeft="130dp"
+        android:layout_width="150dp"
+        android:layout_height="55dp"
+        android:backgroundTint="@color/purple_200"
+        android:text="@string/btn_login"
+        android:layout_marginStart="130dp"
+        tools:targetApi="lollipop" />
+</FrameLayout>
